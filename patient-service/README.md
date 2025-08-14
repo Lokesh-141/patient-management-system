@@ -1,5 +1,25 @@
 ## patient-service-db
 
+**Image ID or name:** `postgres:latest`
+
+**Container name:** `patient-service-db`
+
+**Bind ports:** `5000:5432`
+
+**Bind mounts:** `C:\Users\prita\db_volumes\patient-service-db:/var/lib/postgresql/data`
+
+### Enviroment Variables
+```
+POSTGRES_DB=db; POSTGRES_PASSWORD=password;
+POSTGRES_USER=admin_user
+```
+
+**Run options:** `--network internal`
+
+---
+
+## patient-service
+
 **Dockerfile:** `patient-service\Dockerfile`
 
 **Image tag:** `patient-service:latest`
