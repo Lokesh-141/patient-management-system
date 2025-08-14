@@ -1,10 +1,10 @@
-Dockerfile: `analytics-service\Dockerfile`
+**Dockerfile:** `analytics-service\Dockerfile`
 
-Image tag: `analytics-service:latest`
+**Image tag:** `analytics-service:latest`
 
-Container name: `analytics-service`
+**Container name:** `analytics-service`
 
-Bind ports: `4002:4002`
+**Bind ports:** `4002:4002`
 
 ## Enviroment variables
 ```
