@@ -1,4 +1,4 @@
-## patient-service-db
+## patient-service-db (Docker image)
 
 **Image ID or name:** `postgres:latest`
 
@@ -18,7 +18,7 @@ POSTGRES_USER=admin_user
 
 ---
 
-## patient-service
+## patient-service (Dockerfile)
 
 **Dockerfile:** `patient-service\Dockerfile`
 
