@@ -10,3 +10,5 @@
 ```
 SPRING_KAFKA_BOOTSTRAP_SERVERS=kafka:9092
 ```
+
+**Run options:** `--network internal`
