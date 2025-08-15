@@ -34,18 +34,17 @@ analytics-service/
 ```
 
 ---
+## 🐳 analytics-service (Dockerfile)
 
-**Dockerfile:** `analytics-service\Dockerfile`
-
-**Image tag:** `analytics-service:latest`
-
-**Container name:** `analytics-service`
-
-**Bind ports:** `4002:4002`
+| Property         | Value                          |
+|------------------|--------------------------------|
+| Dockerfile       | `analytics-service/Dockerfile` |
+| Image Tag        | `analytics-service:latest`     |
+| Container Name   | `analytics-service`            |
+| Bind Ports       | `4002:4002`                    |
+| Run Options      | `--network internal`           |
 
 ### Enviroment variables
 ```
 SPRING_KAFKA_BOOTSTRAP_SERVERS=kafka:9092
 ```
-
-**Run options:** `--network internal`
