@@ -1,3 +1,6 @@
+## Folder Structure
+
+```
 integration-tests/
 ├── src/
 │   ├── main/
@@ -7,3 +10,4 @@ integration-tests/
 │           ├── AuthIntegrationTest.java
 │           └── PatientIntegrationTest.java
 └── pom.xml
+```
