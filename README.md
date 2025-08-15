@@ -1,4 +1,100 @@
-# patient-management-system
+# 🏥 Patient Management System
+A modular backend system for managing patients, authentication, billing, and analytics—built with Spring Boot, gRPC, Kafka, and Protobuf. Designed for clarity, scalability, and real-world healthcare workflows.
+
+> ⚠️ This repository contains backend services only. There is no user interface (UI). All modules are API-first and integration-ready.
+
+---
+
+## 🧠 What This System Solves
+
+Modern healthcare platforms require:
+
+- Secure onboarding of patients with validated data
+- Automated billing tied to patient creation
+- Real-time analytics for operational insights
+- Stateless authentication and role-based access
+- Clear service boundaries for scalability and maintainability
+
+This system delivers those capabilities through a clean, event-driven architecture.
+
+---
+
+## 🧱 Project Structure
+
+```
+patient-management/
+├── patient-service/             # Manages patient records and emits Kafka events
+├── auth-service/                # Handles authentication and JWT issuance
+├── billing-service/             # gRPC-based billing account creation
+├── analytics-service/           # Consumes Kafka events for reporting and insights
+├── api-gateway/                 # Centralized routing and request forwarding
+├── api-requests/                # REST + Swagger contracts for external clients
+├── grpc-requests/               # Protobuf contracts for gRPC communication
+├── infrastructure/              # Dockerfiles, config templates, secrets
+├── integration-tests/           # End-to-end test suite across services
+└── patient-management.iml       # IntelliJ project descriptor
+```
+
+---
+
+## 🔗 Service Interactions
+
+| Source           | Target            | Protocol | Contract             |
+|------------------|-------------------|----------|----------------------|
+| `patient-service`| `billing-service` | gRPC     | `billing_service.proto` |
+| `patient-service`| `analytics-service`| Kafka   | `patient_event.proto`   |
+| `api-gateway`    | All services      | HTTP     | REST + Swagger       |
+
+---
+
+## 🧩 Module Highlights
+
+### `patient-service`
+- RESTful CRUD for patient records
+- DTO validation with group constraints
+- gRPC call to billing-service
+- Kafka event emission (`PatientCreated`)
+- PostgreSQL persistence with UUIDs
+
+### `auth-service`
+- Stateless JWT authentication
+- Login and token refresh endpoints
+- Role-based access control
+
+### `billing-service`
+- gRPC server exposing `CreateBillingAccount`
+- Protobuf-based request/response
+- Isolated billing logic
+
+### `analytics-service`
+- Kafka consumer for patient events
+- Aggregates metrics for reporting
+- Exposes REST endpoints for insights
+
+### `api-gateway`
+- Routes external requests to internal services
+- Handles fallback, CORS, and routing logic
+
+---
+
+## 🧠 Real-World Justification
+
+- **Event-Driven Design:** Patient creation triggers billing and analytics asynchronously—mirroring real hospital workflows.
+- **gRPC for Internal RPC:** Fast, typed communication between services with Protobuf contracts—ideal for low-latency backend calls.
+- **Kafka for Observability:** Decoupled event stream enables real-time insights without impacting core flows.
+- **Strict Boundaries:** Each module owns its domain—no shared databases, no cross-service leaks.
+- **Infrastructure-as-Code Ready:** Dockerfiles, secrets, and configs are modular and production-grade.
+- **Reviewer-Grade Clarity:** Every folder, contract, and interaction is annotated for instant understanding.
+
+---
+
+## 📘 Notes
+
+- This system is backend-only. There is no frontend or UI layer.
+- All services are designed for API-level integration and orchestration.
+- Folder boundaries are strictly maintained for clarity and reproducibility.
+
+---
 
 ## kafka (Docker image)
 
@@ -20,3 +116,13 @@ KAFKA_CFG_PROCESS_ROLES=controller,broker
 ```
 
 **Run options:** `--network internal`
+
+---
+
+## 🛡️ License
+
+This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.
+
+## 🌟 About Me
+
+Hi there! I'm Kairav Singh.. I’m an IT professional and passionate YouTuber on a mission to share knowledge and make working with data enjoyable and engaging!
