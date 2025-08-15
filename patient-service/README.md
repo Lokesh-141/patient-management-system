@@ -10,9 +10,16 @@ patient-service/
 │   │   ├── java/
 │   │   │   └── com/pm/patientservice/
 │   │   │       ├── controller/
+│   │   │       │   └── PatientController.java
 │   │   │       ├── dto/
-│   │   │       │   └── validators/
+│   │   │       │   ├── validators/
+│   │   │       │   |   └── CreatePatientValidationGroup.java
+│   │   │       │   ├── PatientRequestDTO.java
+│   │   │       |   └── PatientResponseDTO.java
 │   │   │       ├── exception/
+│   │   │       │   ├── EmailAlreadyExistsException.java
+│   │   │       │   ├── GlobalExceptionHandler.java
+│   │   │       |   └── PatientNotFoundException.java
 │   │   │       ├── grpc/
 │   │   │       │   └── BillingServiceGrpcClient.java
 │   │   │       ├── kafka/
