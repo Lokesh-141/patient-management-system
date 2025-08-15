@@ -37,6 +37,36 @@ patient-management/
 
 ---
 
+## 🧱 Tech Stack
+
+| Layer        | Technology                          |
+|--------------|--------------------------------------|
+| Framework    | Spring Boot 3.4.8                    |
+| Language     | Java 21                              |
+| Database     | PostgreSQL / H2 (dev)                |
+| Messaging    | Apache Kafka                         |
+| RPC          | gRPC + Protobuf                      |
+| Docs         | SpringDoc OpenAPI                    |
+| Build Tool   | Maven                                |
+| Container    | Docker (multi-stage build)           |
+| Testing      | JUnit 5 + RestAssured                |
+
+---
+
+## 🧮 Compatibility Notice
+
+This system is developed and verified on:
+
+- **Java:** 21  
+- **Spring Boot:** 3.4.8  
+- **Kafka:** bitnami/kafka:latest  
+- **Docker Desktop:** 4.x  
+- **PostgreSQL:** 15.x  
+- **Maven:** 3.9.x
+
+> > ⚠️ Versions must be strictly followed for compatibility. Newer or older versions may cause unexpected behavior or failures.
+---
+
 ## 🔗 Service Interactions
 
 | Source           | Target            | Protocol | Contract             |
@@ -93,6 +123,7 @@ patient-management/
 - This system is backend-only. There is no frontend or UI layer.
 - All services are designed for API-level integration and orchestration.
 - Folder boundaries are strictly maintained for clarity and reproducibility.
+- Use exact versions for compatibility.
 
 ---
 
