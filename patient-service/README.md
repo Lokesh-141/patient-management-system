@@ -57,33 +57,33 @@ patient-service/
 
 ---
 
-## patient-service-db (Docker image)
+## 🐘 patient-service-db (Docker image)
 
-**Image ID or name:** `postgres:latest`
-
-**Container name:** `patient-service-db`
-
-**Bind ports:** `5000:5432`
-
-**Bind mounts:** `C:\Users\prita\db_volumes\patient-service-db:/var/lib/postgresql/data`
+| Property         | Value                                                                 |
+|------------------|-----------------------------------------------------------------------|
+| Image            | `postgres:latest`                                                    |
+| Container Name   | `patient-service-db`                                                 |
+| Bind Ports       | `5000:5432`                                                           |
+| Bind Mounts      | `C:\Users\prita\db_volumes\patient-service-db:/var/lib/postgresql/data` |
+| Run Options      | `--network internal`
 
 ### Enviroment Variables
 ```
-POSTGRES_DB=db; POSTGRES_PASSWORD=password;
+POSTGRES_DB=db;
+POSTGRES_PASSWORD=password;
 POSTGRES_USER=admin_user
 ```
-
-**Run options:** `--network internal`
 
 ---
 
 ## patient-service (Dockerfile)
 
-**Dockerfile:** `patient-service\Dockerfile`
-
-**Image tag:** `patient-service:latest`
-
-**Container name:** `patient-service`
+| Property         | Value                          |
+|------------------|--------------------------------|
+| Dockerfile       | `patient-service/Dockerfile`   |
+| Image Tag        | `patient-service:latest`       |
+| Container Name   | `patient-service`              |
+| Run Options      | `--network internal`           |
 
 ### Enviroment Variables
 ```
@@ -95,5 +95,3 @@ SPRING_DATASOURCE_USERNAME=admin_user; SPRING_JPA_HIBERNATE_DDL_AUTO=update;
 SPRING_KAFKA_BOOTSTRAP_SERVERS=kafka:9092;
 SPRING_SQL_INIT_MODE=always
 ```
-
-**Run options:** `--network internal`
