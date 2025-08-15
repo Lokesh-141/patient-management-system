@@ -30,9 +30,9 @@ patient-service/
 │   │   │       │   └── Patient.java
 │   │   │       ├── repository/
 │   │   │       │   └── PatientRepository.java
-│   │   │       ├── service/
-│   │   │       │   ├── PatientService.java
-│   │   │       │   └── PatientServiceApplication.java
+│   │   │       └── service/
+│   │   │           ├── PatientService.java
+│   │   │           └── PatientServiceApplication.java
 │   │   ├── proto/
 │   │   │   ├── billing_service.proto
 │   │   │   └── patient_event.proto
