@@ -13,18 +13,17 @@ api-requests/
 ```
 
 ---
+## 🐳 api-requests (Dockerfile)
 
-**Dockerfile:** `api-gateway\Dockerfile`
-
-**Image tag:** `api-gateway:latest`
-
-**Container name:** `api-gateway`
-
-**Bind ports:** `4004:4004`
+| Property         | Value                          |
+|------------------|--------------------------------|
+| Dockerfile       | `api-gateway/Dockerfile`       |
+| Image Tag        | `api-gateway:latest`           |
+| Container Name   | `api-gateway`                  |
+| Bind Ports       | `4004:4004`                    |
+| Run Options      | `--network internal`           |
 
 ### Enviroment Variables
 ```
 AUTH_SERVICE_URL=http://auth-service:4005
 ```
-
-**Run options:** `--network internal`
