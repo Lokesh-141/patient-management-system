@@ -1,7 +1,7 @@
 # 🏥 Patient Management System
-A modular backend system for managing patients, authentication, billing, and analytics—built with Spring Boot, gRPC, Kafka, and Protobuf. Designed for clarity, scalability, and real-world healthcare workflows.
+A modular, production-grade backend for healthcare platforms—built with Spring Boot, gRPC, Kafka, and Protobuf. Designed for clarity, scalability, and real-world hospital workflows.
 
-> ⚠️ This repository contains backend services only. There is no user interface (UI). All modules are API-first and integration-ready.
+> ⚠️ This repository contains **backend services only**. There is **no UI layer**. All modules are API-first, integration-ready, and built for reviewer-grade clarity.
 
 ---
 
