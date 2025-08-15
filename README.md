@@ -64,7 +64,7 @@ This system is developed and verified on:
 - **PostgreSQL:** 15.x  
 - **Maven:** 3.9.x
 
->  ⚠️ Versions must be strictly followed for compatibility. Newer or older versions may cause unexpected behavior or failures.
+>  ⚠️ Versions must be strictly followed for compatibility. Deviations may cause unexpected behavior or failures.
 ---
 
 ## 🔗 Service Interactions
@@ -127,13 +127,14 @@ This system is developed and verified on:
 
 ---
 
-## kafka (Docker image)
+## 🐳 Kafka (Docker Image)
 
-**Image ID or name:** `bitnami/kafka:latest`
-
-**Container name:** `kafka`
-
-**Bind ports:** `9092:9092 9094:9094`
+| Property         | Value                          |
+|------------------|--------------------------------|
+| Image            | `bitnami/kafka:latest`         |
+| Container Name   | `kafka`                        |
+| Bind Ports       | `9092:9092`, `9094:9094`       |
+| Run Options      | `--network internal`           |
 
 ### Enviroment Variables
 ```
@@ -145,8 +146,6 @@ KAFKA_CFG_LISTENERS=PLAINTEXT://:9092,CONTROLLER://:9093,EXTERNAL://:9094;
 KAFKA_CFG_NODE_ID=0;
 KAFKA_CFG_PROCESS_ROLES=controller,broker
 ```
-
-**Run options:** `--network internal`
 
 ---
 
