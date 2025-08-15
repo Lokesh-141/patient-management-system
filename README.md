@@ -64,7 +64,7 @@ This system is developed and verified on:
 - **PostgreSQL:** 15.x  
 - **Maven:** 3.9.x
 
-> > ⚠️ Versions must be strictly followed for compatibility. Newer or older versions may cause unexpected behavior or failures.
+>  ⚠️ Versions must be strictly followed for compatibility. Newer or older versions may cause unexpected behavior or failures.
 ---
 
 ## 🔗 Service Interactions
