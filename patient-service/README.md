@@ -76,7 +76,7 @@ POSTGRES_USER=admin_user
 
 ---
 
-## patient-service (Dockerfile)
+## 🐳 patient-service (Dockerfile)
 
 | Property         | Value                          |
 |------------------|--------------------------------|
