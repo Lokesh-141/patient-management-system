@@ -1,3 +1,47 @@
+## Folder Structure
+
+```
+auth-service/
+├── .mvn/
+│   └── wrapper/
+│       └── maven-wrapper.properties
+├── src/
+│   └── main/
+│       ├── java/
+│       |   └── com/pm/authservice/
+│       |       ├── config/
+│       |       │   └── SecurityConfig.java
+│       |       ├── controller/
+│       |       │   └── AuthController.java
+│       |       ├── dto/
+│       |       │   ├── LoginRequestDTO.java
+│       |       │   └── LoginResponseDTO.java
+│       |       ├── model/
+│       |       │   └── User.java
+│       |       ├── repository/
+│       |       │   └── UserRepository.java
+│       |       ├── service/
+│       |       │   ├── AuthService.java
+│       |       │   └── UserService.java
+│       |       ├── util/
+│       |       │   └── JwtUtil.java
+│       |       └── AuthServiceApplication.java
+│       └── resources/
+│           ├── application.properties
+│           └── data.sql
+├── target/
+├── .gitattributes
+├── .gitignore
+├── auth-service.iml
+├── Dockerfile
+├── HELP.md
+├── mvnw
+├── mvnw.cmd
+└── pom.xml
+```
+
+---
+
 ## auth-service-db (Docker image)
 
 **Image ID or name:** `postgres:latest`
