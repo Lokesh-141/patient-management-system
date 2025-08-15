@@ -22,6 +22,7 @@ billing-service/
 │       └── java/
 │           └── com/pm/billingservice/
 │               └── BillingServiceApplicationTests.java
+├── target/
 ├── .gitattributes
 ├── .gitignore
 ├── billing-service.iml
