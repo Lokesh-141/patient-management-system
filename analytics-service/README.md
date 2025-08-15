@@ -6,7 +6,7 @@
 
 **Bind ports:** `4002:4002`
 
-## Enviroment variables
+### Enviroment variables
 ```
 SPRING_KAFKA_BOOTSTRAP_SERVERS=kafka:9092
 ```
