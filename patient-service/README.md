@@ -1,3 +1,55 @@
+## Folder Structure
+
+```
+patient-service/
+├── .mvn/
+│   └── wrapper/
+│       └── maven-wrapper.properties
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/pm/patientservice/
+│   │   │       ├── controller/
+│   │   │       ├── dto/
+│   │   │       │   └── validators/
+│   │   │       ├── exception/
+│   │   │       ├── grpc/
+│   │   │       │   └── BillingServiceGrpcClient.java
+│   │   │       ├── kafka/
+│   │   │       │   └── KafkaProducer.java
+│   │   │       ├── mapper/
+│   │   │       │   └── PatientMapper.java
+│   │   │       ├── model/
+│   │   │       │   └── Patient.java
+│   │   │       ├── repository/
+│   │   │       │   └── PatientRepository.java
+│   │   │       ├── service/
+│   │   │       │   ├── PatientService.java
+│   │   │       │   └── PatientServiceApplication.java
+│   │   ├── proto/
+│   │   │   ├── billing_service.proto
+│   │   │   └── patient_event.proto
+│   │   └── resources/
+│   │       ├── static/
+│   │       ├── templates/
+│   │       ├── application.properties
+│   │       └── data.sql
+│   └── test/
+│       └── java/
+│           └── com/pm/patientservice/
+│               └── PatientServiceApplicationTests.java
+├── target/
+├── .gitattributes
+├── .gitignore
+├── Dockerfile
+├── HELP.md
+├── mvnw
+├── mvnw.cmd
+└── pom.xml
+```
+
+---
+
 ## patient-service-db (Docker image)
 
 **Image ID or name:** `postgres:latest`
