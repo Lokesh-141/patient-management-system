@@ -35,12 +35,12 @@ billing-service/
 
 ---
 
-**Dockerfile:** `billing-service\Dockerfile`
+## 🐳 billing-service (Dockerfile)
 
-**Image tag:** `billing-service:latest`
-
-**Container name:** `billing-service`
-
-**Bind ports:** `4001:4001 9001:9001`
-
-**Run options:** `--network internal`
+| Property         | Value                          |
+|------------------|--------------------------------|
+| Dockerfile       | `billing-service/Dockerfile`   |
+| Image Tag        | `billing-service:latest`       |
+| Container Name   | `billing-service`              |
+| Bind Ports       | `4001:4001`, `9001:9001`       |
+| Run Options      | `--network internal`           |
